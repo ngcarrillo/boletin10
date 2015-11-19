@@ -17,8 +17,9 @@ public class Boletin10_1 {
     public static void main(String[] args) {
         // TODO code application logic here
     juego obxJuego = new juego();
-    obxJuego.validar();
-    obxJuego.juego1();
+    obxJuego.modoJuego();
+    obxJuego.volverJugar();
+    
     
     
     }
