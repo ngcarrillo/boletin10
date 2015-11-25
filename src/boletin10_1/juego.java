@@ -31,11 +31,16 @@ public class juego {
             num1 =(int)(Math.random()* 50 +1);
             intentos = Integer.parseInt(JOptionPane.showInputDialog("Introduce el numero de intentos"));
             juego1();
+            volverJugar();
+            break;
         case "amigo":
             validar();
             juego1();
+            volverJugar();
+            break;
         default:
              JOptionPane.showMessageDialog (null, "Las unicas opciones validas son amigo o solo");
+             break;
              volverEmpezar = true;
     }
     }while(volverEmpezar = true);
@@ -92,18 +97,22 @@ public class juego {
     
     public void volverJugar(){
         boolean volverEmpezar;
-     novoIntento = (JOptionPane.showInputDialog("¿Quieres volver a jugar"));
+    
      
      do {
+          novoIntento = (JOptionPane.showInputDialog("¿Quieres volver a jugar"));
      switch (novoIntento){
              
          case "si":
              modoJuego();
+             break;
          case "no":
              JOptionPane.showMessageDialog(null,"Gracias por jugar");
+             break;
          default:
              JOptionPane.showMessageDialog (null, "Las unicas opciones validas son si o no");
              volverEmpezar=true;
+             break;
              
      }}while (volverEmpezar=true);
      }}
