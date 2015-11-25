@@ -18,7 +18,6 @@ public class Boletin10_1 {
         // TODO code application logic here
     juego obxJuego = new juego();
     obxJuego.modoJuego();
-    obxJuego.volverJugar();
     
     
     
